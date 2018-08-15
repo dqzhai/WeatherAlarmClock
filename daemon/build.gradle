@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-	compileSdkVersion 23
+	compileSdkVersion 26
 	buildToolsVersion "23.0.1"
 
 	defaultConfig {
-		minSdkVersion 8
-		targetSdkVersion 21
+		minSdkVersion 17
+		targetSdkVersion 23
 	}
 
 	sourceSets {
@@ -16,13 +16,13 @@ android {
 		}
 	}
 }
-
+/**
 task ndkBuild(type: Exec) {
 	def ndkDir = project.plugins.findPlugin('com.android.library').sdkHandler.getNdkFolder()
 	commandLine "$ndkDir/ndk-build.cmd", '-C', 'src/main/jni',
 			"NDK_OUT=$buildDir/ndk/obj",
 			"NDK_APP_DST_DIR=$buildDir/ndk/libs/\$(TARGET_ARCH_ABI)"
-}
+}*/
 
 task copyExeFile(type: Copy) {
 	from fileTree(dir: file(buildDir.absolutePath + '/ndk/libs/armeabi'), include: '*')
