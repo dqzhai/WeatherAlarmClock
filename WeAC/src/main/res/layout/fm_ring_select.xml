@@ -32,7 +32,7 @@
         android:background="@color/gray_background_color"
         android:orientation="vertical">
 
-        <com.astuetz.PagerSlidingTabStrip
+        <xin.astuetz.PagerSlidingTabStrip
             android:id="@+id/tabstrip"
             android:layout_width="match_parent"
             android:layout_height="48dp"

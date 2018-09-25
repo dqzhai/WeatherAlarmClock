@@ -37,7 +37,7 @@
 
         <include layout="@layout/layout_loading"/>
 
-        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        <xin.handmark.pulltorefresh.library.PullToRefreshScrollView
             android:id="@+id/pull_refresh_scrollview"
             xmlns:ptr="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
@@ -52,6 +52,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout="@layout/viewstub_wea"/>
-        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+        </xin.handmark.pulltorefresh.library.PullToRefreshScrollView>
     </FrameLayout>
 </LinearLayout>

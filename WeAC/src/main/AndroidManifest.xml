@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
-    package="com.kaku.weac"
+    package="xin.trpay.weather"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
@@ -235,7 +235,7 @@
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="ObExIXC7RqG2ZXf0Ys2q0ttv"/>
         <meta-data
-            android:name="com.kaku.weac.util.GlideConfiguration"
+            android:name="xin.trpay.weather.util.GlideConfiguration"
             android:value="GlideModule"/>
         <meta-data
             android:name="UMENG_APPKEY"

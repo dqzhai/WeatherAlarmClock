@@ -388,7 +388,7 @@
 
         </LinearLayout>
 
-        <com.kaku.weac.view.LineChartViewDouble
+        <xin.trpay.weather.view.LineChartViewDouble
             android:id="@+id/line_char"
             android:layout_width="match_parent"
             android:layout_height="150dp"
