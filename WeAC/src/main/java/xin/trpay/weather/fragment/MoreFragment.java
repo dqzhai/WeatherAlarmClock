@@ -159,6 +159,7 @@ public class MoreFragment extends LazyLoadFragment {
         updateUIStatus();
 
         // 主题
+        view.findViewById(R.id.theme).setVisibility(View.GONE);
         view.findViewById(R.id.theme).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -170,6 +171,7 @@ public class MoreFragment extends LazyLoadFragment {
         });
 
         // 扫码
+        view.findViewById(R.id.scan_scan).setVisibility(View.GONE);
         view.findViewById(R.id.scan_scan).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -214,6 +216,7 @@ public class MoreFragment extends LazyLoadFragment {
         });
 
         // 意见反馈
+        view.findViewById(R.id.feedback).setVisibility(View.GONE);
         view.findViewById(R.id.feedback).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -236,6 +239,7 @@ public class MoreFragment extends LazyLoadFragment {
         });
 
         // 检查更新
+        view.findViewById(R.id.check_update).setVisibility(View.GONE);
         view.findViewById(R.id.check_update).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -248,6 +252,7 @@ public class MoreFragment extends LazyLoadFragment {
         });
 
         // 赏个好评
+        view.findViewById(R.id.give_favor).setVisibility(View.GONE);
         view.findViewById(R.id.give_favor).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -270,6 +275,7 @@ public class MoreFragment extends LazyLoadFragment {
         });
 
         // 好友分享
+        view.findViewById(R.id.friend_share).setVisibility(View.GONE);
         view.findViewById(R.id.friend_share).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -281,6 +287,7 @@ public class MoreFragment extends LazyLoadFragment {
         });
 
         // 常见问题
+        view.findViewById(R.id.faq).setVisibility(View.GONE);
         view.findViewById(R.id.faq).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
