@@ -2,7 +2,7 @@
 <resources>
 
     <!-- app名 -->
-    <string name="app_name">天气闹钟</string>
+    <string name="app_name">精灵生活助手</string>
     <string name="version">1.1.3</string>
     <string name="press_again_exit">再按一次退出</string>
     <!-- Tab界面 -->
@@ -211,7 +211,7 @@
     <string name="quick_timer">快捷计时</string>
     <string name="stop">暂停</string>
     <string name="reset">重置</string>
-    <string name="siesta">午睡</string>
+    <string name="siesta">午休</string>
     <string name="facial_mask">面膜</string>
     <string name="instant_noodles">泡面</string>
     <string name="run">跑步</string>
@@ -284,9 +284,9 @@
     <string name="welcome_suggestion">感谢您提出反馈意见,我会尽快回复</string>
 
     <!--关于-->
-    <string name="weac_version">天气闹钟 v%1$s</string>
-    <string name="weac_slogan">准时叫醒你的梦想</string>
-    <string name="copyright">© 2016 咖枯. All Rights Reserved.</string>
+    <string name="weac_version">精灵生活助手 v%1$s</string>
+    <string name="weac_slogan">您的生活最佳伴侣</string>
+    <string name="copyright">美立行科技. All Rights Reserved.</string>
 
     <!--软件更新-->
     <string name="latest_version">当前已是最新版本</string>
@@ -295,8 +295,7 @@
     <!--赏个好评-->
     <string name="launch_market_fail">无法打开应用市场</string>
     <!--好友分享-->
-    <string name="share_text">我正在使用『天气闹钟』，推荐您也来试试。下载地址：http://zhushou.360.cn/detail/index/soft_id/3242718
-        或登陆应用商城（360、豌豆荚、应用宝）搜索『天气闹钟』即可下载。</string>
+    <string name="share_text">我正在使用『精灵生活助手』，推荐您也来试试</string>
     <!--常见问题-->
     <string name="no_alarm">☆ 闹钟没有正常响起\n以下原因均会导致闹钟无法正常响起：</string>
     <string name="no_alarm_detail1">1.关机，请开启您的设备，确保天气闹钟能够正常运行。</string>

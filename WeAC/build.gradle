@@ -6,7 +6,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.kaku.weac"
+        applicationId "xin.trpay.weather"
         minSdkVersion 17
         targetSdkVersion 23
         versionCode 7
@@ -15,19 +15,38 @@ android {
         manifestPlaceholders = [UMENG_CHANNEL_VALUE: "Umeng"]
     }
 
+    signingConfigs {
+        release {//发布版本的签名配置
+            keyAlias 'feifei'
+            v1SigningEnabled true
+            v2SigningEnabled true
+            keyPassword 'feifei521'
+            storeFile file('/Users/dqzhai/qun/me/andriod/sign.jks')
+            storePassword 'feifei521'
+        }
 
+        debug {//调试版本的签名配置
+            keyAlias 'feifei'
+            v1SigningEnabled true
+            v2SigningEnabled true
+            keyPassword 'feifei521'
+            storeFile file('/Users/dqzhai/qun/me/andriod/sign.jks')
+            storePassword 'feifei521'
+        }
+    }
+
+/**
     tinyinfo {
         apiKey = 'b7FRW-xzgURGr0KlpRnq3BYjoRJMgx9L'
         //是否跳过此task
         skip = true
         //是否打印日志
         isShowLog = false
-    }
+    }**/
 
     buildTypes {
         debug {
             buildConfigField "boolean", "LOG_DEBUG", "true"
-
             minifyEnabled false
             zipAlignEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -35,17 +54,13 @@ android {
 
         release {
             buildConfigField "boolean", "LOG_DEBUG", "false"
-
-            // 是否生成debug apk
-            debuggable false
+            signingConfig signingConfigs.release
             //混淆
             minifyEnabled true
-            //Zipalign优化APK http://www.jizhuomi.com/android/environment/203.html
+            //对齐
             zipAlignEnabled true
-            // 移除无用的resource(资源)文件 getIdentifier等将获取不到 慎用！！！
-//            shrinkResources true
-            //签名
-//            signingConfig signingConfigs.relealse
+            //移除无用的resource 文件
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
